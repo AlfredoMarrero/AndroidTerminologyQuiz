@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android Terminology Quiz</string>
+    <string name="userScore">Score</string>
+</resources>
