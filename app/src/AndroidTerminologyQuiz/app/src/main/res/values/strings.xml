@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Android Terminology Quiz</string>
     <string name="userScore">Score</string>
+    <string name="difficulty_easy">easy</string>
+    <string name="difficulty_medium">medium</string>
+    <string name="difficulty_hard">hard</string>
+    <string name="button_next">next</string>
 </resources>

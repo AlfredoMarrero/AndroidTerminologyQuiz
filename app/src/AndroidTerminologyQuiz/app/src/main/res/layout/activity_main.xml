@@ -41,7 +41,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/dificulty_level_view"
+        android:id="@+id/difficulty_level_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/score"
@@ -58,7 +58,7 @@
             android:layout_marginLeft="10dp"
             android:checked="true"
             android:padding="10dp"
-            android:text="easy"
+            android:text="@string/difficulty_easy"
             android:fontFamily="sans-serif-light" />
 
         <CheckBox
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:padding="10dp"
-            android:text="medium"
+            android:text="@string/difficulty_medium"
             android:fontFamily="sans-serif-light" />
 
         <CheckBox
@@ -75,7 +75,7 @@
             android:layout_marginRight="15dp"
             android:checked="false"
             android:padding="10dp"
-            android:text="hard"
+            android:text="@string/difficulty_hard"
             android:fontFamily="sans-serif-light" />
 
     </LinearLayout>
@@ -114,8 +114,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:orientation="vertical">
 
@@ -156,13 +156,19 @@
         </LinearLayout>
 
     </LinearLayout>
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
     <Button
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Next"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_next"
         android:onClick="nextQuestion"/>
+    </RelativeLayout>
+
+
 
 </LinearLayout>
