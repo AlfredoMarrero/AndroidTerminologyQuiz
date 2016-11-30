@@ -7,6 +7,7 @@
     tools:context="com.alfredo.androidterminologyquiz.MainActivity">
 
     <LinearLayout
+
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,15 +15,18 @@
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
         android:layout_marginTop="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+
+        >
 
         <LinearLayout
             android:id="@+id/score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="#e0e0e0">
 
             <TextView
                 android:layout_width="match_parent"
@@ -32,8 +36,9 @@
                 android:text="@string/userScore"
                 android:textAllCaps="true"
                 android:textSize="15dp"
-                android:textStyle="bold"
                 android:id="@+id/textView"
+                android:paddingTop="10dp"
+                android:textColor="#000"
                 />
 
             <TextView
@@ -43,8 +48,8 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
                 android:textColor="#000000"
-                android:textSize="55sp"
-                android:onClick="changeQuestionSet"/>
+                android:textSize="45sp"
+                android:layout_marginBottom="7dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -86,15 +91,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="5dp"
                 android:text="Question 1"
                 android:textColor="#000"
-                android:textSize="17dp" />
+                android:textSize="17dp"
+                android:id="@+id/textView2" />
 
             <View
                 android:layout_width="match_parent"
@@ -108,7 +116,9 @@
                 android:layout_marginTop="10dp"
                 android:textColor="#000"
                 android:textSize="18sp"
-                android:textStyle="normal" />
+                android:textStyle="normal"
+                android:fontFamily="sans-serif"
+                />
 
             <LinearLayout
                 android:id="@+id/checkboxes_linearLayout_view"
@@ -118,40 +128,6 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"
                 android:orientation="vertical">
-
-                <!--<CheckBox-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:checked="false"-->
-                    <!--android:padding="10dp"-->
-                    <!--android:text="Image view"   -->
-                    <!--android:textStyle="italic" />-->
-
-                <!--<CheckBox-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginRight="15dp"-->
-                    <!--android:checked="false"-->
-                    <!--android:padding="10dp"-->
-                    <!--android:text="Button"-->
-                    <!--android:textStyle="italic" />-->
-
-                <!--<CheckBox-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:checked="false"-->
-                    <!--android:padding="10dp"-->
-                    <!--android:text="TextView"-->
-                    <!--android:textStyle="italic" />-->
-
-                <!--<CheckBox-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginRight="15dp"-->
-                    <!--android:checked="false"-->
-                    <!--android:padding="10dp"-->
-                    <!--android:text="None of the above"-->
-                    <!--android:textStyle="italic" />-->
             </LinearLayout>
 
         </LinearLayout>
@@ -159,13 +135,14 @@
     </LinearLayout>
 
     <Button
-        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:onClick="gotoNextQuestionIfAnswerCorrect"
+        android:text="@string/button_next"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
-        android:onClick="nextQuestion"
-        android:text="@string/button_next" />
+        android:id="@+id/button" />
 
 
 </RelativeLayout>
